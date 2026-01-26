@@ -15,7 +15,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float velocidadCaminar = 3f;
     [SerializeField] private float velocidadCorrer = 6f;
 
-    private bool isGrounded;
+    [SerializeField] private bool isGrounded;
     private Transform groundCheck;
     [SerializeField] private float radio = 0.4f;
     [SerializeField] private LayerMask whatIsGround;
