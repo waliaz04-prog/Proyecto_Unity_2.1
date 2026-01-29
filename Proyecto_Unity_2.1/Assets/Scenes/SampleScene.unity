@@ -420,7 +420,6 @@ GameObject:
   m_Component:
   - component: {fileID: 285152504}
   - component: {fileID: 285152503}
-  - component: {fileID: 285152502}
   - component: {fileID: 285152501}
   m_Layer: 0
   m_Name: Camera mapa
@@ -473,14 +472,6 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!81 &285152502
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 285152500}
-  m_Enabled: 1
 --- !u!20 &285152503
 Camera:
   m_ObjectHideFlags: 0
@@ -1449,7 +1440,7 @@ GameObject:
   - component: {fileID: 894389323}
   - component: {fileID: 894389322}
   - component: {fileID: 894389321}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: puerta temporal
   m_TagString: Interactuable
   m_Icon: {fileID: 0}
@@ -1468,7 +1459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181ce0317593d644cad21be66c6326de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::teletransportador
-  cristalDestino: {fileID: 677928492}
+  cristalDestino: {fileID: 1402499818}
   jugador: {fileID: 1707198816}
   alturaOffset: 1
 --- !u!65 &894389322
@@ -2115,8 +2106,8 @@ GameObject:
   - component: {fileID: 1707198817}
   - component: {fileID: 1707198816}
   - component: {fileID: 1707198819}
-  - component: {fileID: 1707198821}
   - component: {fileID: 1707198820}
+  - component: {fileID: 1707198821}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -2198,7 +2189,7 @@ Transform:
   m_GameObject: {fileID: 1707198815}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -526.64, y: 9.327, z: 5.424}
+  m_LocalPosition: {x: -518.4, y: 2.47, z: 11.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2223,7 +2214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::interactuar
   interactuableLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   sonidoInteractuar: 
 --- !u!114 &1707198820
 MonoBehaviour:
@@ -2746,8 +2737,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0.35, z: 0}
+  m_Size: {x: 1, y: 0.9564842, z: 1}
+  m_Center: {x: 0, y: 0.32824212, z: 0}
 --- !u!114 &1971646581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2761,7 +2752,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PisoFlotante
   bajada: 30
-  velocidad: 1
+  suavidad: 1.7
+  rebote: 0.15
 --- !u!1001 &7865958997928165037
 PrefabInstance:
   m_ObjectHideFlags: 0

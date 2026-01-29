@@ -26,5 +26,6 @@ public class teletransportador : MonoBehaviour, IInteractable
 
         // Reactivar
         cc.enabled = true;
+        Debug.Log("teletransportado");
     }
 }
