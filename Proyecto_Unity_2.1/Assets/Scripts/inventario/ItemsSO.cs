@@ -12,4 +12,4 @@ public class ItemsSO : ScriptableObject
 
 }
 
-public enum itemType { Tarjeta, llaves, Notas };
+public enum itemType {  prueva, llaves, Notas };
