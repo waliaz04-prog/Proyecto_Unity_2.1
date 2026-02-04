@@ -27,9 +27,8 @@ public class CogerObjeto : MonoBehaviour
                     {
                         if (!string.IsNullOrEmpty(sonidoRecoger))
                             AudioManager.Instance.Play(sonidoRecoger);
-                        
+
                         pickable.PickItem();
-                        Destroy(gameObject);
                     }
                 }
             }
